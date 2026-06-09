@@ -1,0 +1,54 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+
+// Reactive array that will hold patients.
+const patients = ref([])
+
+
+// Runs automatically when page loads.
+onMounted(async () => {
+
+  // Call ASP.NET Core API. – Change the port
+  const response =
+    await fetch('http://localhost:5053/api/patients/city')
+  const response2 =await fetch('http://localhost:5053/api/patients/city/count')
+
+  // Convert JSON into JavaScript objects.
+  patients.value =
+    await response.json()
+  count.value=await response2.json()
+ 
+
+})
+</script>
+
+<template>
+
+  <h1>CareBridge Patients</h1>
+  <p>Total Patients From Pune : {{count.count}}</p>
+  <table border="1">
+
+    <tr>
+      <th>Patient Id</th>
+      <th>Full Name</th>
+      <th>City</th>
+      <th>IsActive</th>
+      
+    </tr>
+
+    <!-- Loop through all patients -->
+
+    <tr
+      v-for="p in patients"
+      :key="p.patientId">
+
+      <td>{{ p.patientId }}</td>
+      <td>{{ p.fullName }}</td>
+      <td>{{ p.city }}</td>
+      <td>{{ p.isActive }}</td>
+
+    </tr>
+
+  </table>
+
+</template>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37314.3 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCMemoryAllocation", "GCMemoryAllocation\GCMemoryAllocation.csproj", "{A62935E3-9533-42A6-A9A2-3B3B511A20BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A62935E3-9533-42A6-A9A2-3B3B511A20BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62935E3-9533-42A6-A9A2-3B3B511A20BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62935E3-9533-42A6-A9A2-3B3B511A20BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62935E3-9533-42A6-A9A2-3B3B511A20BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0F58B9A-0771-48C6-95D9-FA051C8EE44B}
+	EndGlobalSection
+EndGlobal
